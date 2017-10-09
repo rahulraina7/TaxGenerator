@@ -17,6 +17,9 @@ public class SalesTaxCalculator {
 	BigDecimal total_tax = new BigDecimal("0");
 	BigDecimal items_total = new BigDecimal("0");
 
+	final BigDecimal salesTax = new BigDecimal("0.10");
+	final BigDecimal importDuty = new BigDecimal("0.05");
+
 	ArrayList<Item> receiptItems = new ArrayList<Item>();
 
 	public void addItem(Item item) {
@@ -26,14 +29,13 @@ public class SalesTaxCalculator {
 		BigDecimal round = new BigDecimal("0.05");
 
 		if (item.getItemType() == Itemtype.OTHERS) {
-			sales_tax = item.getPrice().multiply(new BigDecimal(item.getQuantity())).multiply(new BigDecimal("0.10"));
+			sales_tax = item.getPrice().multiply(new BigDecimal(item.getQuantity())).multiply(salesTax);
 			sales_tax = sales_tax.divide(round, RoundingMode.UP);
 			sales_tax = sales_tax.setScale(0, RoundingMode.UP).multiply(round);
 		}
 
 		if (item.isImported()) {
-			import_duties = item.getPrice().multiply(new BigDecimal(item.getQuantity()))
-					.multiply(new BigDecimal("0.05"));
+			import_duties = item.getPrice().multiply(new BigDecimal(item.getQuantity())).multiply(importDuty);
 			import_duties = import_duties.divide(round, RoundingMode.UP);
 			import_duties = import_duties.setScale(0, RoundingMode.UP).multiply(round);
 		}
