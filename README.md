@@ -21,12 +21,14 @@ Current Assumptions :
 **Usage Instructions:**
 
 Tests are run before each program execution. Please refer to ```mvn_build.log``` after execution.
-
+A input csv file is added at path ```src/test/java/com/yojee/valid.csv```
 
 To read input from csv file and print to standard out use : 
 ```
 ./TaxGenerator <input_csv_file> true
 ```
+Example : ```./TaxGenerator src/test/java/com/yojee/valid.csv true```
+
 To read input from csv file and print to csv file use :
 
 ```
