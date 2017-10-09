@@ -35,7 +35,7 @@ To read input from csv file and print to csv file use :
 ./TaxGenerator <input_csv_file>
 ```
 
-output.csv is generated in root directory of the project
+**output.csv** is generated in root directory of the project
 
 To read from standard input and print to standard output use : 
 ```
