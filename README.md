@@ -4,6 +4,7 @@ Program to generate Sales Tax on a list of items.
 
 
 Sales Tax - 10%
+
 Import Duty - 5%
 
 Current Assumptions : 
@@ -15,21 +16,26 @@ Current Assumptions :
 
 
 
-Usage Instructions:
+
+
+**Usage Instructions:**
+
+Tests are run before each program execution. Please refer to ```mvn_build.log``` after execution.
 
 
 To read input from csv file and print to standard out use : 
-
+```
 ./TaxGenerator <input_csv_file> true
-
+```
 To read input from csv file and print to csv file use :
 
+```
 ./TaxGenerator <input_csv_file>
-
+```
 To read from standard input and print to standard output use : 
-
+```
 ./TaxGenerator
 <Paste CSV Contents>
-
+```
 
 
