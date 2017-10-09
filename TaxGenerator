@@ -1,7 +1,7 @@
 #!/bin/sh
 mvn clean install > mvn_build.log
 if [ $# -eq 0 ]; then
-	java -jar target/TaxGenerator-1.0-SNAPSHOT.jar
+	java -jar target/TaxGenerator-1.0-SNAPSHOT-jar-with-dependencies.jar
 else
-	java -jar target/TaxGenerator-1.0-SNAPSHOT.jar $1 $2
+	java -jar target/TaxGenerator-1.0-SNAPSHOT-jar-with-dependencies.jar $1 $2
 fi

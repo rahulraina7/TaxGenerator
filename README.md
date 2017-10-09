@@ -15,3 +15,21 @@ Current Assumptions :
 
 
 
+Usage Instructions:
+
+
+To read input from csv file and print to standard out use : 
+
+./TaxGenerator <input_csv_file> true
+
+To read input from csv file and print to csv file use :
+
+./TaxGenerator <input_csv_file>
+
+To read from standard input and print to standard output use : 
+
+./TaxGenerator
+<Paste CSV Contents>
+
+
+
