@@ -16,6 +16,10 @@ Current Assumptions :
 
 
 
+***Requirements***
+1) Java 8 - http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+2) Maven - https://maven.apache.org/download.cgi
+
 
 
 **Usage Instructions:**
